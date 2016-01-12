@@ -563,22 +563,23 @@ CKEDITOR.dialog.add( 'image2', function( editor ) {
                     // set localy in the object for interaction
                     // consistency befor saving the node
                     widget.setData('tmpclass', this.getValue() );
+                    widget.setData( 'hasCaption', true);
                   }
                 }
               ]
             },
-					{
-						id: 'hasCaption',
-						type: 'checkbox',
-						label: lang.captioned,
-						requiredContent: features.caption.requiredContent,
-						setup: function( widget ) {
-							this.setValue( widget.data.hasCaption );
-						},
-						commit: function( widget ) {
-							widget.setData( 'hasCaption', this.getValue() );
-						}
-					}
+					//{
+						//id: 'hasCaption',
+						//type: 'checkbox',
+						//label: lang.captioned,
+						//requiredContent: features.caption.requiredContent,
+						//setup: function( widget ) {
+							//this.setValue( widget.data.hasCaption );
+						//},
+						//commit: function( widget ) {
+							//widget.setData( 'hasCaption', this.getValue() );
+						//}
+					//}
 				]
 			},
 			{
