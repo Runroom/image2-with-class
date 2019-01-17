@@ -857,7 +857,7 @@
 				data.align = 'center';
 
 				// Image can be wrapped in link <a><img/></a>.
-				image = el.getFirst( 'img' ) || el.getFirst( 'a' ).getFirst( 'img' );
+				image = el.getFirst( 'img' );
 			}
 
 			// No center wrapper has been found.
